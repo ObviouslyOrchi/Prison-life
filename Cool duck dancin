@@ -12,7 +12,7 @@ local Five = Window:NewTab("Commands")
 -- Credits --
 
 local Credit = Credit:NewSection("Credits")
-Credit:NewLabel("Script buy ProjectOrchi#1812")
+Credit:NewLabel("Script by ProjectOrchi#1812")
 Credit:NewLabel("Thanks to Kavo for making the ui!")
 Credit:NewButton("Copy my Discord tag.", "Copys my Discord tag (if you need help)", function()
     setclipboard("ProjectOrchi#1812")
