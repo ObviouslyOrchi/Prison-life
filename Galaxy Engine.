@@ -21,7 +21,7 @@ local Key = Tab:AddSection({
 Tab:AddTextbox({
 	Name = "Enter key",
 	Default = "Enter Key here!",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
 		_G.KeyInput = Value
 	end	  
