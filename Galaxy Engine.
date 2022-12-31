@@ -1,1 +1,46 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ObviouslyOrchi/Prison-life/main/Galaxy%20Engine"))();
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Key  System", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+_G.Key = "Galaxy[49891YDH12IGDZADA||]"
+_G.KeyInput = "string"
+
+function Pro()
+print ("Correct Key") loadstring(game:HttpGet("https://raw.githubusercontent.com/ObviouslyOrchi/Prison-life/main/Galaxy%20Engine."))();
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://6003957613",
+	PremiumOnly = false
+})
+
+local Key = Tab:AddSection({
+	Name = "Key system"
+})
+
+Tab:AddTextbox({
+	Name = "Enter key",
+	Default = "Enter Key here!",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+Tab:AddButton({
+	Name = "Check Key",
+	Callback = function()
+      		if _G.KeyInput == _G.Key then
+                  Pro()
+              end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Get Key (discord invite)",
+	Callback = function()
+      	   setclipboard("https://discord.gg/U5DfApeNvD") ;
+  	end    
+})
+
+OrionLib:Init()
