@@ -5,7 +5,7 @@ _G.Key = "Galaxy[49891YDH12IGDZADA||]"
 _G.KeyInput = "string"
 
 function Pro()
-print ("Correct Key") loadstring(game:HttpGet("https://raw.githubusercontent.com/ObviouslyOrchi/Prison-life/main/Galaxy%20Engine%20Prison%20L1fe"))();
+print ("Correct Key") loadstring(game:HttpGet("https://github.com/ObviouslyOrchi/Prison-life/blob/main/Cool%20duck%20dancin"))();
 end
 
 local Tab = Window:MakeTab({
