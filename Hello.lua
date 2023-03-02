@@ -183,7 +183,7 @@ end
 
 -- // User Interface \\ --
 -- [ Window ] --
-local Window = UserInterface.new("V1.2 | Moonlight Client (Prison Life)", UDim2.new(0, 420, 0, 420))
+local Window = UserInterface.new("V1.3 | Moonlight Client (Prison Life)", UDim2.new(0, 420, 0, 420))
 
 -- [ Assists ] --
 Window:Divider("Assists")
