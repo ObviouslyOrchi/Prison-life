@@ -211,6 +211,10 @@ end)
 -- [ Random Things ] --
 Window:Divider("Random Things")
 
+Window:Button("New Anti Cheat Bypass", "USE BEFORE ANYTHING BELOW! Bypasses anti cheat.", function()
+   print ("succesfully destroyed local AntiCheat")
+end)
+
 Window:Button("Kill All", "Kills everyone in-game", function()
    local GunScript = (LocalPlayer.Backpack:FindFirstChild("GunInterface", true) or LocalPlayer.Character:FindFirstChild("GunInterface", true))
    if GunScript then
@@ -269,6 +273,88 @@ Window:Button("Gun Modification", "Modifies the current gun you are holding.", f
        GunInfo.CurrentAmmo = math.huge
    end
 end)
+
+Window:Button("Start Infinite Yield", "Starts a admin script with lots of cool features.", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Window:Divider("TrashTalk")
+
+Window:Button("Insult N1", "Just says a toxic insult..", function()
+   -- Settings
+
+local message = "Yea but im not the one eating ground." -- the message
+local Tiemlolol = 9999999999 -- the wait time between chats, anything under 2 isnt recommended
+
+
+-- Script (dont modify)
+
+if _G.AutoSay then _G.AutoSay = false
+else _G.AutoSay = true
+end
+while _G.AutoSay do
+	local args = {[1] = message,[2] = "All"}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	task.wait(tonumber(Tiemlolol))
+end
+end)
+
+Window:Button("Insult N2", "Just says a toxic insult..", function()
+   -- Settings
+
+local message = "Get good, get Moonlight Client." -- the message
+local Tiemlolol = 9999999999 -- the wait time between chats, anything under 2 isnt recommended
+
+
+-- Script (dont modify)
+
+if _G.AutoSay then _G.AutoSay = false
+else _G.AutoSay = true
+end
+while _G.AutoSay do
+	local args = {[1] = message,[2] = "All"}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	task.wait(tonumber(Tiemlolol))
+end
+end)
+
+Window:Button("Insult N3", "Just says a toxic insult..", function()
+   -- Settings
+
+local message = "You lookin about as hot as my freezer." -- the message
+local Tiemlolol = 9999999999 -- the wait time between chats, anything under 2 isnt recommended
+
+
+-- Script (dont modify)
+
+if _G.AutoSay then _G.AutoSay = false
+else _G.AutoSay = true
+end
+while _G.AutoSay do
+	local args = {[1] = message,[2] = "All"}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	task.wait(tonumber(Tiemlolol))
+end
+end)
+
+Window:Button("Insult N4", "Just says a toxic insult..", function()
+      local message = "What is a basic definition of easy? Easy describes something that is not difficult. Like winning a game against you." -- the message
+local Tiemlolol = 9999999999 -- the wait time between chats, anything under 2 isnt recommended
+
+
+
+
+if _G.AutoSay then _G.AutoSay = false
+else _G.AutoSay = true
+end
+while _G.AutoSay do
+	local args = {[1] = message,[2] = "All"}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	task.wait(tonumber(Tiemlolol))
+end
+end)
+
+
 
 -- [ Miscellaneous ] --
 Window:Divider("Miscellaneous")
