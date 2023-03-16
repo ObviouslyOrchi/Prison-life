@@ -99,7 +99,7 @@ VerifyButton.MouseButton1Down:connect(function()
 
 		tween:Play()
 		
-		game.StarterGui:SetCore("SendNotification", {Title = "correct key", Text = "welcome", Icon = "rbxassetid://12206884774", Duration = 5})
+		game.StarterGui:SetCore("SendNotification", {Title = "Correct Key! 🔑", Text = "Welcome to Moonlight Client! 🌙", Icon = "rbxassetid://12206884774", Duration = 5})
 
 		wait(7)
 
@@ -642,7 +642,7 @@ GetKey.TextColor3 = Color3.fromRGB(255, 255, 255)
 GetKey.TextSize = 42.000
 GetKey.TextWrapped = true
 GetKey.MouseButton1Down:connect(function()
-	setclipboard(susk)
+	setclipboard(setclipboard(https://discord.com/invite/WmdxEVfz6Q);)
 	
 	game.StarterGui:SetCore("SendNotification", {Title = "key copied", Text = "the key was copied into your clipboard", Icon = "", Duration = 5})
 end)
