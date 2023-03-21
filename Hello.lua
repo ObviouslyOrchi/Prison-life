@@ -1,6 +1,6 @@
 -- 112
 
-local suskey = "Moonlight epik"
+local suskey = "Moonlight Fish"
 
 
 local GUI = Instance.new("ScreenGui")
